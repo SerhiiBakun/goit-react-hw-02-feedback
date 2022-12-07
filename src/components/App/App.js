@@ -13,8 +13,8 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleFeedback = e => {
-    const value = e.target.textContent.toLowerCase();
+  handleFeedback = option => {
+    const value = option.toLowerCase();
     this.setState(prevState => {
       return {
         [value]: prevState[value] + 1,

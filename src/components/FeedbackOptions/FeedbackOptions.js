@@ -8,13 +8,13 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 
   return (
     <ButtonWraper>
-      <Button type="button" onClick={onLeaveFeedback}>
+      <Button type="button" onClick={() => onLeaveFeedback(optionNames[0])}>
         {optionNames[0]}
       </Button>
-      <Button type="button" onClick={onLeaveFeedback}>
+      <Button type="button" onClick={() => onLeaveFeedback(optionNames[1])}>
         {optionNames[1]}
       </Button>
-      <Button type="button" onClick={onLeaveFeedback}>
+      <Button type="button" onClick={() => onLeaveFeedback(optionNames[2])}>
         {optionNames[2]}
       </Button>
     </ButtonWraper>
