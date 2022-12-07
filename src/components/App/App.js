@@ -14,10 +14,9 @@ export class App extends Component {
   };
 
   handleFeedback = option => {
-    const value = option.toLowerCase();
     this.setState(prevState => {
       return {
-        [value]: prevState[value] + 1,
+        [option.toLowerCase()]: prevState[option.toLowerCase()] + 1,
       };
     });
   };
